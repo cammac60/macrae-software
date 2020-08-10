@@ -3,17 +3,16 @@ import { Route, withRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.scss';
 
-export class App extends Component {
-  constructor() {
-    super();
-    this.state = {}
-  };
+type initialState = {};
+
+export class App extends Component<{}, initialState> {
+  state: initialState = {};
 
   componentDidMount = () => {
     document.title = 'MacRae Software';
   };
 
-  render = () => {
+  render() {
     return (
       <div className="App">
 
@@ -22,4 +21,4 @@ export class App extends Component {
   };
 }
 
-export default withRouter(App);
+export default App;
