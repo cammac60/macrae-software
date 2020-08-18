@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 const router = (
   <BrowserRouter>
-    <App />
+    <App text='hey'/>
   </BrowserRouter>
 );
 
