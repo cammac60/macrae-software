@@ -47,7 +47,8 @@
     "jest": {
       "snapshotSerializers": [
         "enzyme-to-json/serializer"
-      ]
+      ],
+      "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"]
     }
   }
 }
